@@ -37,8 +37,10 @@
 
 		}
 
-		public function delete($id = null){
+		public function delete($id){
 			if($this->request->is('get')){
+				throw new MethodNotAllowedException();
+			}else{
 				if($this->Student->delete($id)){
 					$this->Session->setFlash('Student deleted');
 					$this->redirect(array('action' => 'index'));

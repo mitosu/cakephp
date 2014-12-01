@@ -23,7 +23,8 @@
 			</td>
 			<td>
 				<?php echo $this->Html->link('Editar', array('action' => 'edit', $student['Student']['id'])); ?>
-				<?php echo $this->Html->link('Borrar', array('action' => 'delete', $student['Student']['id'])); ?>
+				<?php echo $this->Form->postLink('Borrar', array('action' => 'delete', $student['Student']['id']),
+				array('confirm' => '¿Are you sure delete to ' . $student['Student']['name'] . '?')); ?>
 			</td>
 		</tr>
 	<?php } ?>
