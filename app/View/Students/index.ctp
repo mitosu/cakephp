@@ -1,4 +1,5 @@
 <h1>Listado de Estudiantes</h1>
+<?php echo $this->Html->link('Agregar estudiante', array('action' => 'add')); ?>
 <table>
 	<tr>
 		<th>Identificador</th>
