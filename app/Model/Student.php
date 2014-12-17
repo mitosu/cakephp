@@ -20,4 +20,8 @@
 			'phone' => array('rule' => 'numeric',
 							'message' => 'Por favor escriba solo números')
 		);
+
+		/*Asociaciones entre tablas a nivel de modelo. Así es como se debe relacionar en cakephp
+		siempre debe hacerse esta relacion a nivel de modelo.*/
+
 	}
